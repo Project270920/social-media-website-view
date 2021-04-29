@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+<head lang="en">
+
+	<!-- Static content -->
+	<link rel="stylesheet" href="/resources/**">
+	<script type="text/javascript" src="/resources/**"></script>
+	 <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<title>INDEX</title>
+</head>
+<body>
+
+
+<div class="container-fluid">
+	
+	<!-- Image and text -->
+	<nav  class="navbar navbar-expand-lg navbar-light bg-light">
+	
+		<a class="navbar-brand" href="index.html">
+	    	<img src="img/icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+	    	<b>WEBSITE</b>
+	  	</a>
+	  
+	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    	<ul class="navbar-nav mr-auto">
+	      		<li class="nav-item active">
+	        		<a class="nav-link" href="/website/home">Home <span class="sr-only">(current)</span></a>
+	      		</li>
+	      		<li class="nav-item">
+	        		<a class="nav-link" href="/website/register">Register</a>
+	      		</li>
+	      		<li class="nav-item dropdown">
+	        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          			Dropdown
+	        		</a>
+		        	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          			<a class="dropdown-item" href="website">Action</a>
+		          			<a class="dropdown-item" href="website">Another action</a>
+		          			<div class="dropdown-divider"></div>
+		          			<a class="dropdown-item disabled" href="website">Something else here</a>
+		        	</div>
+	      			</li>
+	      			<li class="nav-item">
+	        			<a class="nav-link disabled" href="website">Disabled</a>
+	      			</li>
+	    	</ul>
+	    	<form class="form-inline my-2 my-lg-0">
+	    		<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	      		<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	    	</form>
+		</div>
+	</nav>
+
+	<div class="row">
+		<div class="col-9">
+			<div class="alert alert-info">
+				<h1 class="alert-heading">INDEX PAGE !!!</h1>
+				<hr>
+
+				<div class="row">
+					<div class="col-4">
+						<div class="jumbotron alert alert-warning">
+							<h1>100</h1>
+							<h4>Total Profile's</h4>	
+						</div>		
+					</div>
+					<div class="col-4">
+						<div class="jumbotron alert alert-danger">
+							<h1>100</h1>
+							<h4>Total Active Profile's</h4>	
+						</div>	
+					</div>
+					<div class="col-4">
+						<div class="jumbotron alert alert-secondary">
+							<h1>100</h1>
+							<h4>Total Post's</h4>	
+						</div>	
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="col-3">
+			<div class="card alert alert-info">
+				<div class="card-header"><h3><center>LOGIN</center></h3></div>
+				<div class="card-body">
+					<form action="#" th:action="@{login}" th:object="${login}" method="post">
+						<div class="form-col">
+							<div class="col">
+		      					<b><label for="validationDefault01">username</label></b>
+		      					<input type="text" th:field="*{username}" class="form-control" id="validationDefault01" placeholder="enter username" required />
+		    				</div>
+		 		   			<div class="col">
+		      					<b><label for="validationDefault01">password</label></b>
+		      					<input type="password" th:field="*{password}" class="form-control" id="validationDefault01" placeholder="enter password" required />
+		    				</div>
+						</div>
+						<br>
+						<center><button class="btn btn-primary" type="submit">LOGIN</button></center>
+					</form>				
+				</div>
+			</div>
+		</div>
+	
+	</div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+-->
+</body>
+</html>

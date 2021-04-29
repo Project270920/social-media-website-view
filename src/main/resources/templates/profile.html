@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+<head lang="en">
+	 <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<title>INDEX</title>
+</head>
+<body>
+
+<div class="container-fluid">
+	
+	<!-- Image and text -->
+	<nav  class="navbar navbar-expand-lg navbar-light bg-light">
+	
+		<a class="navbar-brand" href="index.html">
+	    	<img src="img/icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+	    	<b>WEBSITE</b>
+	  	</a>
+	  
+	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    	<ul class="navbar-nav mr-auto">
+	      		<li class="nav-item active">
+	        		<a class="nav-link" href="/website">Home <span class="sr-only">(current)</span></a>
+	      		</li>
+	      		<li class="nav-item">
+	        		<a class="nav-link" href="/website/register">Register</a>
+	      		</li>
+	      		<li class="nav-item dropdown">
+	        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          			Dropdown
+	        		</a>
+		        	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          			<a class="dropdown-item" href="website">Action</a>
+		          			<a class="dropdown-item" href="website">Another action</a>
+		          			<div class="dropdown-divider"></div>
+		          			<a class="dropdown-item disabled" href="website">Something else here</a>
+		        	</div>
+	      			</li>
+	      			<li class="nav-item">
+	        			<a class="nav-link disabled" href="website">Disabled</a>
+	      			</li>
+	    	</ul>
+	    	<form class="form-inline my-2 my-lg-0">
+	    		<ul class="navbar-nav mr-auto">
+		    		<li class="nav-item active">
+		        		<a class="nav-link" href="/website">Logout</a>
+		      		</li>
+	    		</ul>
+	    		<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	      		<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	    	</form>
+		</div>
+	</nav>
+
+	<div class="row">
+		<div class="col-3">
+			<div class="alert alert-warning">
+				
+				<div class="row">
+					<div class="col">
+						<img th:src="@{/img/icon.png}" class="rounded" alt="Profile">
+						<h3><center>username</center></h3>
+						<h4><center>profile name</center></h4>	
+						<hr>
+						<div>
+							<ul class="list-group">
+							 	<li class="list-group-item d-flex justify-content-between align-items-center">
+							    	Messages <span class="badge badge-primary badge-pill">14</span>
+							  	</li>
+							  	<li class="list-group-item d-flex justify-content-between align-items-center">
+							    	Friend Request <span class="badge badge-primary badge-pill">2</span>
+							  	</li>
+							  	<li class="list-group-item d-flex justify-content-between align-items-center">
+							    	Post Tagged <span class="badge badge-primary badge-pill">1</span>
+							  </li>
+							</ul>
+						</div>		
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="col-6">
+
+			<div class="alert alert-info">
+				<h3><center>My Post</center></h3>
+				<hr>
+				
+				<div class="list-group">
+					<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+					    <div class="d-flex w-100 justify-content-between">
+					     	<h5 class="mb-1">My Post-1</h5>
+					      	<small>3 days ago</small>
+					    </div>
+					    <p class="mb-1">My Post Description</p>
+					    <small>@Tag1, @Tag2, @Tag3,...</small>
+				    </a>
+
+				  	<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+					    <div class="d-flex w-100 justify-content-between">
+					     	<h5 class="mb-1">My Post-2</h5>
+					      	<small>3 days ago</small>
+					    </div>
+					    <p class="mb-1">My Post Description</p>
+					    <small>@Tag1, @Tag2, @Tag3,...</small>
+				    </a>
+				    
+				    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+					    <div class="d-flex w-100 justify-content-between">
+					     	<h5 class="mb-1">My Post-3</h5>
+					      	<small>3 days ago</small>
+					    </div>
+					    <p class="mb-1">My Post Description</p>
+					    <small>@Tag1, @Tag2, @Tag3,...</small>
+				    </a>
+				    
+				    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+					    <div class="d-flex w-100 justify-content-between">
+					     	<h5 class="mb-1">My Post-4</h5>
+					      	<small>3 days ago</small>
+					    </div>
+					    <p class="mb-1">My Post Description</p>
+					    <small>@Tag1, @Tag2, @Tag3,...</small>
+				    </a>
+				    
+				    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+					    <div class="d-flex w-100 justify-content-between">
+					     	<h5 class="mb-1">My Post-5</h5>
+					      	<small>3 days ago</small>
+					    </div>
+					    <p class="mb-1">My Post Description</p>
+					    <small>@Tag1, @Tag2, @Tag3,...</small>
+				    </a>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="col-3">
+			<div class="alert alert-danger">
+				<h3 class="alert-heading"><center>Friend List(7)</center></h3>
+				<hr>
+
+				<table class="table table-striped">
+				  <tbody>
+				    <tr>
+				      <td>Mark</td>
+				    </tr>
+				    <tr>
+				      <td>Jacob</td>
+				    </tr>
+				    <tr>
+				      <td>Thornton</td>
+				    </tr>
+				    <tr>
+				      <td>@fat</td>
+				    </tr>
+				    <tr>
+				      <td>Larry</td>
+				    </tr>
+   				    <tr>
+				      <td>the Bird</td>
+				    </tr>
+				    <tr>
+				      <td>@twitter</td>
+				    </tr>
+				  </tbody>
+				</table>
+
+			</div>
+		</div>
+		
+		
+	</div>
+</div>
+
+</body>
+</html>
